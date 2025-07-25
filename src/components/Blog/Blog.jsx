@@ -4,7 +4,7 @@ const Blog = ({ blog }) => {
     const { cover, title, author, reading_time, author_img, hashtags } = blog;    
   return (
     <div className='mb-20'>
-      <img className=' mb-8 rounded-3xl' src={cover} alt={`Cover picture of the title ${title}`} />
+      <img className='w-full mb-8 rounded-3xl' src={cover} alt={`Cover picture of the title ${title}`} />
       {/* Author and reading time div */}
       <div className="flex justify-between items-center">
         {/* author pic, date div */}
