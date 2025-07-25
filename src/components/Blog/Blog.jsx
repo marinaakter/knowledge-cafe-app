@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { IoMdBookmark } from "react-icons/io";
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleAddToBookmark }) => {
   const {
     cover,
     title,
@@ -37,7 +37,7 @@ const Blog = ({ blog }) => {
         {/* Reading time div */}
         <div className="flex items-center gap-3">
           <span>{reading_time} min read</span>
-          <button className="text-2xl">
+          <button onClick={handleAddToBookmark} className="text-2xl">
             <IoMdBookmark />
           </button>
         </div>
@@ -51,8 +51,8 @@ const Blog = ({ blog }) => {
           </span>
         ))}
       </p>
-      <button class=" mt-4 group flex h-10 items-center justify-center rounded-md border border-teal-600 bg-gradient-to-b from-blue-600 via-blue-500 to-blue-600 px-4 text-neutral-50 shadow-[inset_0_1px_0px_0px_#5eead4] hover:bg-gradient-to-b hover:from-teal-600 hover:via-teal-600 hover:to-teal-600 active:[box-shadow:none]">
-        <span class="block group-active:[transform:translate3d(0,1px,0)]">
+      <button className=" mt-4 group flex h-10 items-center justify-center rounded-md border border-teal-600 bg-gradient-to-b from-blue-600 via-blue-500 to-blue-600 px-4 text-neutral-50 shadow-[inset_0_1px_0px_0px_#5eead4] hover:bg-gradient-to-b hover:from-teal-600 hover:via-teal-600 hover:to-teal-600 active:[box-shadow:none]">
+        <span className="block group-active:[transform:translate3d(0,1px,0)]">
           Mark As Read
         </span>
       </button>
