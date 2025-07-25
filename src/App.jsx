@@ -13,7 +13,6 @@ function App() {
           <Bookmarks></Bookmarks>
         </div>
       </div>
-      <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     </>
   );
 }
